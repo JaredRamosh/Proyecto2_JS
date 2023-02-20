@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p>Crear una función que en base a 2 números enteros que ingrese el usuario, calcular cual 
+    número es el mayor y devolverlo. 
+    </p>
+    <label for="num1">Primer número:</label><br>
+<input type="number" id="num1"><br>
+<label for="num2">Segundo número:</label><br>
+<input type="number" id="num2"><br>
+<button onclick="calcularMayor()">Calcular mayor</button><br>
+<p id="resultado"></p>
+</body>
+<script>
+    function calcularMayor() {
+  var num1 = parseInt(document.getElementById("num1").value);
+  var num2 = parseInt(document.getElementById("num2").value);
+
+  if (num1 > num2) {
+    var mayor = num1;
+  } else {
+    var mayor = num2;
+  }
+
+  var mensaje = "El número mayor es: " + mayor;
+
+  document.getElementById("resultado").innerHTML = mensaje;
+}
+</script>
+</html>

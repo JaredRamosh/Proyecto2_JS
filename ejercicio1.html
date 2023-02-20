@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Crear una función que en base a la edad que ingreso el usuario devolver un mensaje si la 
+        persona es mayor de edad o no. Utilizar para la condición el operador ternario</p>
+    <label for="edad">Ingrese su edad:</label>
+<input type="number" id="edad">
+<button onclick="verificarEdad()">Verificar</button>
+<p id="mensaje"></p>
+</body>
+<script>
+   function verificarEdad() {
+  var edad = document.getElementById("edad").value;
+  var mensaje = (edad >= 18) ? "Eres mayor de edad" : "Eres menor de edad";
+  document.getElementById("mensaje").innerHTML = mensaje;
+}
+</script>
+</html>
